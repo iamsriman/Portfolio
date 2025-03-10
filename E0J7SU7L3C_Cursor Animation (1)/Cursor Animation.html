@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white container mx-auto px-6">
+    <nav class="bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-4">
+                    <div>
+                        <a href="#home" class="flex items-center py-5 px-2 text-gray-700 hover:text-gray-900">
+                            <img src="https://attic.sh/z5mqehihih5yipssk5x16zehetp5" class="h-20 p-1 shadow-xl rounded-full" />
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#About" class="py-5 px-3 text-gray-700 text-xl font-bold hover:text-gray-900">About</a>
+                    <a href="#Experience-section" class="py-5 px-3 text-xl font-bold text-gray-700 hover:text-gray-900">Experience</a>
+                    <a href="#Projects-section" class="py-5 px-3 text-xl font-bold text-gray-700 hover:text-gray-900">Projects</a>
+                    <a href="#Contact" class="py-5 px-3 text-xl text-gray-700 font-bold hover:text-gray-900">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6 text-gray-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden">
+            <a href="#About" class="block py-2 px-4 text-xl font-bold hover:bg-gray-200">About</a>
+            <a href="#Experience-section" class="block py-2 font-bold px-4 text-xl hover:bg-gray-200">Experience</a>
+            <a href="#Projects-section" class="block py-2 font-bold px-4 text-xl hover:bg-gray-200">Projects</a>
+            <a href="#Contact" class="block py-2 px-4 text-xl font-bold hover:bg-gray-200">Contact</a>
+        </div>
+    </nav>
+
+
+    <div class="home-container" id="home">
+        <div>
+            <img src="https://i.imghippo.com/files/cN5nk1725292634.png" class="rounded-full image-my" />
+        </div>
+        <div class="md:flex-row md:justify-items-center md:content-center justify-between">
+            <h1 class="text-gray-700 font-bold text-xl pb-2">Hello I'm</h1>
+            <h1 class="text-slate-950 font-bold text-4xl pb-2" id="text">Sriman</h1>
+            <h1 class="text-gray-700 font-bold text-3xl pb-3">Web Developer</h1>
+            <div class="pb-2">
+                <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-white hover:text-black focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-white-800 dark:text-black dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Download CV</button>
+                <button type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"><a href="#Contact">Contact Info</a></button>
+            </div>
+            <div class="flex justify-center content-center">
+                <a href="https://www.linkedin.com/in/p-mohan-laxmi-srimannarayana/" target="-black">
+                    <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/linkedin.png" class="h-8 m-4" />
+                </a>
+
+                <img href="https://github.com/iamsriman" target="-black" src="https://tangerine-hummingbird-1479b6.netlify.app/assets/github.png" class="h-8 m-4" />
+            </div>
+        </div>
+    </div>
+
+    <div id="About" class="section-2">
+        <div class="section-2-about-top mt-10 mb-10">
+            <h1 class="text-xl font-bold font-medium">Get To Know More</h1>
+            <h1 class="text-4xl font-bold">About Me</h1>
+        </div>
+        <div class="section-2-container">
+            <div>
+                <img src="https://i.imghippo.com/files/Buuu91725378792.jpg" class="rounded-full h-56 mb-10 md:h-96" />
+            </div>
+            <p class="text-center font-medium text-lg ml-6 mr-6">I'm a recent B.Sc. graduate in Electronics and Computer Science, passionate about blending technology and creativity. With a solid foundation in Python, SQL, JS and front-end development, I've built projects like a Canva clone to demonstrate my skills. I thrive in problem-solving and enjoy turning ideas into functional, user-friendly applications. Currently, I'm focused on expanding my expertise in web development and looking for opportunities to contribute to innovative projects.</p>
+        </div>
+    </div>
+    <div id="Experience-section" class="section-3">
+        <div class="section-2-about-top mt-10">
+            <h1 class="text-xl font-bold font-medium">Explore My</h1>
+            <h1 class="text-4xl font-bold">Experience</h1>
+        </div>
+        <div class="md:flex md:flex-row md:justify-center flex flex-col justify-center items-center mt-6">
+            <div class="mt-6 section-3-card bg-white text-black md:mr-5 p-6 rounded-lg shadow-md border-solid border-2 rounded-e-3xl rounded-s-3xl border-black">
+                <h1 class="text-gray-700 font-bold text-3xl text-center flex justify-center">Frontend Development</h1>
+                <div class="section-3-card">
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">HTML</h1>
+                            <p class="text-gray-700 font-medium text-xl">Advanced</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">CSS</h1>
+                            <p class="text-gray-700 font-medium text-xl">Advanced</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">BootStrap</h1>
+                            <p class="text-gray-700 font-medium text-xl">Intermediate</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">JavaScript</h1>
+                            <p class="text-gray-700 font-medium text-xl">Intermediate</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">Tailwind CSS</h1>
+                            <p class="text-gray-700 font-medium text-xl">Basic</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="mt-6 section-3-card bg-white text-black p-6 rounded-lg shadow-md border-solid border-2 rounded-e-3xl rounded-s-3xl border-black">
+                <h1 class="text-gray-700 font-bold text-3xl text-center flex justify-center">Backend Development</h1>
+                <div class="section-3-card">
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">Python</h1>
+                            <p class="text-gray-700 font-medium text-xl">Advanced</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">SQL</h1>
+                            <p class="text-gray-700 font-medium text-xl">Intermediate</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">JavaScript</h1>
+                            <p class="text-gray-700 font-medium text-xl">Intermediate</p>
+                        </div>
+                    </article>
+                    <article class="flex flex-row justify-center">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/checkmark.png" class="h-10 mr-4" />
+                        <div>
+                            <h1 class="font-medium text-black text-xl">Git & Github</h1>
+                            <p class="text-gray-700 font-medium text-xl">Basic</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-4" id="Projects-section">
+        <div class="section-2-about-top mt-10">
+            <h1 class="text-xl font-bold font-medium">Browse My Recent</h1>
+            <h1 class="text-4xl font-bold">Projects</h1>
+        </div>
+        <div class="mt-6 md:flex md:flex-row md:justify-center flex flex-col justify-center justify-items-center items-center">
+            <div class="Project-card mb-4 md:mr-5">
+                <img src="https://i.imghippo.com/files/JW6sQ1725856477.png" class="image-project rounded-lg mt-4 mb-4" />
+                <h1 class="text-2xl font-bold">Project One</h1>
+                <h1 class="text-xl mb-3">Food Munch Application</h1>
+                <button type="button" class="mb-4 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-white hover:text-black focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-white-800 dark:text-black dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    <a href="https://sstar.ccbp.tech/" target="-black">Live Demo</a>
+                </button>
+            </div>
+            <div class="Project-card mb-4">
+                <img src="https://i.imghippo.com/files/P3dmY1725856638.png" class="image-project rounded-lg mt-4 mb-4" />
+                <h1 class="text-2xl font-bold">Project Two</h1>
+                <h1 class="text-xl mb-3">Generative AI Project</h1>
+                <button type="button" class="mb-4 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-white hover:text-black focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-white-800 dark:text-black dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    <a href="https://srimangenai.ccbp.tech/" target="-black">Live Demo</a>
+                </button>
+            </div>
+        </div>
+        <div class="md:flex md:flex-row md:justify-center flex flex-col justify-center justify-items-center items-center">
+            <div class="Project-card mb-4 md:mr-5">
+                <img src="https://i.imghippo.com/files/oVycI1725467682.png" class="image-project rounded-lg mt-4 mb-4" />
+                <h1 class="text-2xl font-bold">Project Three</h1>
+                <h1 class="text-xl mb-3">Canva Clone Website</h1>
+                <button type="button" class="mb-4 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-white hover:text-black focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-white-800 dark:text-black dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    <a href="https://canvaclone.ccbp.tech/" target="-black">Live Demo</a>
+                </button>
+            </div>
+            <div class="Project-card mb-4">
+                <img src="https://i.imghippo.com/files/bJZZd1725636146.png" class="image-project rounded-lg mt-4 mb-4" />
+                <h1 class="text-2xl font-bold">Project Four</h1>
+                <h1 class="text-xl mb-3">Wikipedia Search Engine</h1>
+                <button type="button" class="mb-4 py-2.5 px-5 me-2 mb-2 text-sm font-medium text-black focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-white hover:text-black focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-white-800 dark:text-black dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    <a href="https://srimanwikipedia.ccbp.tech/" target="-black">Live Demo</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="flex flex-col justify-items-center justify-center">
+            <div class="section-2-about-top mt-10">
+                <h1 class="text-xl font-bold font-medium">Get in Touch</h1>
+                <h1 class="text-4xl font-bold">Contact Me</h1>
+            </div>
+            <div class="flex flex-roe justify-center justify-items-center items-center">
+                <div class="section-5-card flex flex-row justify-around mt-6 bg-white text-black md:mr-5 p-6 rounded-lg shadow-md border-solid border-2 rounded-e-3xl rounded-s-3xl border-black">
+                    <article class="flex flex-row">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/email.png" class="h-10 mr-4 self-center" />
+                        <a class="self-center text-lg font-bold" href="mailto:srim78344@gmail.com" target="-black">srim78344@gmail.com</a>
+                    </article>
+                    <article class="flex flex-row">
+                        <img src="https://tangerine-hummingbird-1479b6.netlify.app/assets/linkedin.png" class="h-10 mr-4 self-center" />
+                        <a class="text-lg font-bold self-center" href="https://www.linkedin.com/in/p-mohan-laxmi-srimannarayana/" target="-black">linkedin</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h1 class="text-lg">Copyright © 2024 Sriman. All Rights Reserved.</h1>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button.mobile-menu-button');
+        const menu = document.querySelector('.mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+
+.section-1 {
+    min-height: 80vh;
+}
+
+.image-project {
+    height: 30vh;
+}
+
+.image-my {
+    height: 280px;
+    width: 280px;
+    margin: 60px;
+}
+
+
+
+
+.home-container {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-2-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-5-card {
+    width: 500px;
+    height: 72px;
+}
+
+.card-1 {
+    height: 208px;
+    width: 173px;
+}
+
+
+
+
+
+
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2-about-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-3 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-3-card {
+    display: flex;
+    min-height: 480px;
+    min-width: 329px;
+    gap: 2.8rem;
+    flex-direction: column;
+    align-content: center;
+}
+
+.Project-card {
+    min-width: 329px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 12px;
+}
+
+.section-2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.section-4 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.Project-cards-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+    .section-3-card {
+        direction: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+    .image-my {
+        margin: 60px;
+        height: 400px;
+        width: 400px;
+    }
+
+
+
+
+    .home-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
